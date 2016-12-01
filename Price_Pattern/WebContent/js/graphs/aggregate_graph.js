@@ -55,7 +55,7 @@ function daily_aggrigation() {
 					return format(value);
 				}*/
 				value: function(value) {
-	                return d3.format("$,.2f")(value)
+	                return d3.format("$.2f")(value)
 	            }
 			}
 		},
