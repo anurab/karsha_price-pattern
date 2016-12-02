@@ -49,14 +49,11 @@ function daily_aggrigation() {
 			}
 		},
 		tooltip : {
-			format : {
-				/*value : function(value, ratio, id) {
-					var format = id === '' ? d3.format(',') : d3.format('$.6s');
-					return format(value);
-				}*/
-				value: function(value) {
-	                return d3.format("$.2f")(value)
-	            }
+			  format: {
+		           value: function (value, ratio, id) {
+		        	   var formatMeA = id === 'peak_gain' || id==='peak_loss' ? value = (value/1000000).toFixed(2)+"M$":value;
+		        	   return value;
+		           }
 			}
 		},
 	});
