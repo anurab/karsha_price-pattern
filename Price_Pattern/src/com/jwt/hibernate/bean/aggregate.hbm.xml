@@ -5,7 +5,7 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
  
  <hibernate-mapping>
-   <class name="com.jwt.hibernate.bean.Aggregate" table="gain_loss">
+   <class name="com.jwt.hibernate.bean.Aggregate" table="gainloss">
      <meta attribute="class-description">
          This class contains the details about daily aggregates.
       </meta>
