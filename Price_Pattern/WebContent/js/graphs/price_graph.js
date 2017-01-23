@@ -53,4 +53,8 @@ setTimeout(function () {
                 }
             }
         });
-    }, 500);
+        chart.hide(['Turnover'], {withLegend: true});
+    }
+
+, 500);
+
