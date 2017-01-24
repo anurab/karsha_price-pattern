@@ -5,7 +5,11 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
  
  <hibernate-mapping>
+<<<<<<< HEAD
    <class name="com.jwt.hibernate.bean.Aggregate" table="gainloss">
+=======
+   <class name="com.jwt.hibernate.bean.Aggregate" table="mcap">
+>>>>>>> branch 'master' of https://github.com/Karsha-Project-LSF/karsha_price-pattern.git
      <meta attribute="class-description">
          This class contains the details about daily aggregates.
       </meta>
@@ -14,6 +18,10 @@
       </id>
       <property name="GAIN" column="gain" type="double"/>
       <property name="LOSS" column="loss" type="double"/> 
+      <property name="DIFF_GAIN" column="diff_gain" type="double"/> 
+      <property name="DIFF_LOSS" column="diff_loss" type="double"/> 
+      <property name="max_count" column="maxima_count" type="int"/> 
+       <property name="min_count" column="minima_count" type="int"/> 
       
       
    </class>
