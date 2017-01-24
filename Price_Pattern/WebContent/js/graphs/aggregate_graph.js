@@ -74,27 +74,16 @@ console.log(ss);
 		    },
 		
 		tooltip : {
-<<<<<<< HEAD
-			  format: {
-		           value: function (value, ratio, id) {
-		        	   var formatMeA = id === 'peak_gain' || id==='peak_loss' ? value = (value/1000000000).toFixed(2)+"B$":value;
-		        	   return value;
-=======
 		format : {
 			value: function (value, ratio, id) {
 		        	 var formatMeA = id === 'peakGain'  || id==='diffGain' ? value = (value/1000000000).toFixed(2)+" B$" : value;
 		        	 var formatMeA = id === 'minCount'  ? value =value*-1 : value;
 		        	 var formatMeA = id==='peakLoss' || id==='diffLoss'  ? value = -1*(value/1000000000).toFixed(2)+" B$" : value;
 		        	 return value;
->>>>>>> branch 'master' of https://github.com/Karsha-Project-LSF/karsha_price-pattern.git
 		           }
-<<<<<<< HEAD
-			}
-=======
 			},
 			contents: tooltip_contents
 
->>>>>>> branch 'master' of https://github.com/Karsha-Project-LSF/karsha_price-pattern.git
 		},
 		
 		legend: {
